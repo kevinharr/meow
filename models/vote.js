@@ -40,8 +40,10 @@ module.exports = (sequelize, DataTypes) => {
         model: 'Profiles',
         key: 'id',
       },
-    },
-
-  })
+    }
+  }, {
+    sequelize,
+    modelName: 'Vote',
+  });
   return Vote;
 };
