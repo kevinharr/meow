@@ -8,8 +8,6 @@ const profilesRouter = require('./routes/profiles.js')
 const authRouter = require('./routes/auth.js')
 const votesRouter = require('./routes/votes.js')
 
-app.use('/api/votes', votesRouter)
-
 const app = express()
 
 app.use(cors())
